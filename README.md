@@ -1,22 +1,6 @@
-# arcade
+# My-Cade
+My-Cade is an open-source piece of software for DIY arcade cabinets with the ability to navigate with joysticks, Xbox controllers, or keyboard and mouse.
 
-A new Flutter project.
+This software was developed in Flutter. All of the source code you can find on this page and edit as you would like.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-<a title="Made with Fluent Design" href="https://github.com/bdlukaa/fluent_ui">
-  <img
-    src="https://img.shields.io/badge/fluent-design-blue?style=flat-square&color=7A7574&labelColor=0078D7"
-  />
-</a>
+I would like to update the design and transitions later on. So stay tuned for updates and implement your own if you would like to contribute to this project!
