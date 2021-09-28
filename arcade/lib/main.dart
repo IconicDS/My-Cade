@@ -168,7 +168,7 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      "Please select the path to your 'SteamLibrary' folder...",
+                      "Please select the path to your 'steamapps' or 'SteamLibrary' folder...",
                       style: TextStyle(
                         fontFamily: "Poppins-Semibold",
                       ),
@@ -184,7 +184,8 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
                         String? result =
                             await FilePicker.platform.getDirectoryPath();
                         String path = result!;
-                        while (!(path.endsWith('SteamLibrary'))) {
+                        while (!(path.endsWith('SteamLibrary')) ||
+                            !(path.endsWith('steamapps'))) {
                           result = await FilePicker.platform.getDirectoryPath();
                           path = result!;
                         }
@@ -265,7 +266,10 @@ class _MyHomePageState extends State<MyHomePage> with WindowListener {
       }
     }
 
-    final appDirectory = Directory("${directory.path}/steamapps/common");
+    String fixedPath = directory.path.endsWith("steamapps")
+        ? "/steamapps/common"
+        : "${directory.path}/steamapps/common";
+    final appDirectory = Directory(fixedPath);
     var url =
         Uri.parse("http://api.steampowered.com/ISteamApps/GetAppList/v0002/");
     Response response = await http.get(url);
