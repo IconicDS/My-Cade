@@ -7,4 +7,4 @@ This software was developed in Flutter. All of the source code you can find on t
 
 I would like to update the design and transitions later on. So stay tuned for updates and implement your own if you would like to contribute to this project!
 
-[!["Download for Windows"](https://www.valorantpcdownload.com/wp-content/uploads/2020/07/download-for-windows-1.png)](https://www.chipsbudget.com/Windows Executable.zip)
+[!["Download for Windows"](https://www.valorantpcdownload.com/wp-content/uploads/2020/07/download-for-windows-1.png)](https://www.chipsbudget.com/Windows+Executable.zip)
